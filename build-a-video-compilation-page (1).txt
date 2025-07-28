@@ -1,0 +1,55 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Video Compilation Page</title>
+  </head>
+  <body>
+    <main>
+      <h1>My Favorite Inspirational Videos</h1>
+      <p>These videos motivate me and help me stay focused on my goals in life and coding.</p>
+
+      <section>
+        <h2>Success Motivation</h2>
+        <p>This video talks about the mindset needed to succeed in life.</p>
+        <iframe 
+          src="https://www.youtube.com/embed/UNQhuFL6CWg" 
+          title="Success Motivation Video"
+          width="560"
+          height="315"
+          allowfullscreen>
+        </iframe>
+      </section>
+
+      <section>
+        <h2>Web Development Journey</h2>
+        <p>This video shares how people become web developers and what their path looks like.</p>
+        <iframe 
+          src="https://www.youtube.com/embed/qz0aGYrrlhU" 
+          title="Web Development Journey"
+          width="560"
+          height="315"
+          allowfullscreen>
+        </iframe>
+      </section>
+
+      <section>
+        <h2>Morning Routine for Productivity</h2>
+        <p>This video helps me stay disciplined and productive throughout my day.</p>
+        <iframe 
+          src="https://www.youtube.com/embed/QH7JjW7ZzG4" 
+          title="Morning Routine for Productivity"
+          width="560"
+          height="315"
+          allowfullscreen>
+        </iframe>
+      </section>
+    </main>
+  </body>
+</html>
+
+
+** end of index.html **
+
