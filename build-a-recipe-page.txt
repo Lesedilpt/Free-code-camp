@@ -1,0 +1,36 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Chocolate Mug Cake</title>
+  </head>
+  <body>
+    <h1>Chocolate Mug Cake</h1>
+
+    <p>This quick and easy chocolate mug cake is perfect when you're craving dessert but don't want to bake an entire cake. It's rich, moist, and ready in under 5 minutes!</p>
+
+    <h2>Ingredients</h2>
+    <ul>
+      <li>4 tablespoons all-purpose flour</li>
+      <li>2 tablespoons cocoa powder</li>
+      <li>2 tablespoons sugar</li>
+      <li>3 tablespoons milk</li>
+    </ul>
+
+    <h2>Instructions</h2>
+    <ol>
+      <li>In a microwave-safe mug, mix flour, cocoa powder, and sugar.</li>
+      <li>Add milk and stir until smooth.</li>
+      <li>Microwave on high for 1 minute and 30 seconds.</li>
+      <li>Let it cool slightly, then enjoy warm!</li>
+    </ol>
+
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="A delicious chocolate mug cake in a white cup.">
+  </body>
+</html>
+
+
+** end of index.html **
+
