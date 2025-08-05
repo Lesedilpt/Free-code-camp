@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Catalog</title>
+</head>
+<h1>My Personal Book List</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Genre</th>
+          <th>Publication Year</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>The Alchemist</td>
+          <td>Paulo Coelho</td>
+          <td>Fiction</td>
+          <td>1988</td>
+        </tr>
+        <tr>
+          <td>Atomic Habits</td>
+          <td>James Clear</td>
+          <td>Self-Help</td>
+          <td>2018</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>George Orwell</td>
+          <td>Dystopian</td>
+          <td>1949</td>
+        </tr>
+        <tr>
+          <td>Born a Crime</td>
+          <td>Trevor Noah</td>
+          <td>Biography</td>
+          <td>2016</td>
+        </tr>
+        <tr>
+          <td>Thinking, Fast and Slow</td>
+          <td>Daniel Kahneman</td>
+          <td>Psychology</td>
+          <td>2011</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Total Books: 5</td>
+        </tr>
+      </tfoot>
+    </table>
+<body>
+</body>
+
+</html>
