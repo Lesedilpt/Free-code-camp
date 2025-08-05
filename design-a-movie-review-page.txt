@@ -1,0 +1,42 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie Review - Home</title>
+  </head>
+  <body>
+    <main>
+      <h1>Home</h1>
+
+      <img
+        src="https://upload.wikimedia.org/wikipedia/en/8/87/Home_2015_poster.jpg"
+        alt="Movie poster for the animated film Home, featuring characters Tip and Oh"
+      />
+
+      <p>
+        "Home" is a heartwarming animated film that follows the journey of a
+        young girl named Tip and her unlikely alien friend Oh, as they embark on
+        a quest to find her mother and save the planet from chaos.
+      </p>
+
+      <p>
+        <strong>Movie Rating:</strong>
+        <span aria-hidden="true">⭐⭐⭐⭐⭐⭐⭐⭐⭐☆</span> (9.0/10)
+      </p>
+
+      <h2>Cast Members</h2>
+      <ul>
+        <li><strong>Rihanna</strong> as Tip</li>
+        <li><strong>Jim Parsons</strong> as Oh</li>
+        <li><strong>Jennifer Lopez</strong> as Lucy Tucci</li>
+        <li><strong>Steve Martin</strong> as Captain Smek</li>
+      </ul>
+    </main>
+  </body>
+</html>
+
+
+** end of index.html **
+
