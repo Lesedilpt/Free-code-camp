@@ -1,0 +1,139 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Newspaper</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="newspaper-layout">
+    <!-- Header -->
+    <header class="title">
+      <h1>Daily News</h1>
+    </header>
+
+    <!-- Feature Article -->
+    <article class="feature-article">
+      <h2>Breaking News: Major Event Happens</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt nulla non justo fermentum, nec scelerisque mi cursus.</p>
+    </article>
+
+    <!-- Secondary Article -->
+    <article class="secondary-article">
+      <h2>Secondary News: Important Update</h2>
+      <p>Praesent vel urna ac neque sollicitudin bibendum. Quisque id sem ut magna gravida scelerisque.</p>
+    </article>
+
+    <!-- Cover Image -->
+    <figure class="cover-image">
+      <img src="https://via.placeholder.com/300x200" alt="Cover Image">
+    </figure>
+
+    <!-- Small Articles -->
+    <article class="small-article1">
+      <h3>Local News</h3>
+      <p>Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>Sports</h3>
+      <p>Donec vel risus sit amet sapien ultricies porttitor sed a magna.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>Entertainment</h3>
+      <p>Fusce et ligula ac velit fringilla aliquet vel sit amet odio.</p>
+    </article>
+  </main>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Base styles for the newspaper layout */
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Grid areas */
+.title {
+  grid-area: title;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+/* Grid template areas */
+.newspaper-layout {
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+}
+
+/* Image styling */
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optional styling for readability */
+.newspaper-layout article,
+.newspaper-layout header,
+.newspaper-layout figure {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.feature-article h2,
+.secondary-article h2 {
+  margin-top: 0;
+}
+
+.small-article1 h3,
+.small-article2 h3,
+.small-article3 h3 {
+  margin-top: 0;
+  font-size: 1.2em;
+}
+
+
+** end of styles.css **
+

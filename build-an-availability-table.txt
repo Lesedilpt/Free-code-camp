@@ -1,0 +1,143 @@
+** start of index.html **
+
+<!-- file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Availability Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<table>
+        <tr>
+            <th>Date</th>
+            <th>Monday</th>
+            <th>Tuesday</th>
+            <th>Wednesday</th>
+        </tr>
+   
+        <tr class="half">
+            <td class="time available-1">9 AM</td>
+            <td class="available-1"></td>
+             <td class="available-5 "></td>
+            <td class="available-0"></td>
+             <td class="available-2"></td>
+            </tr>
+        <tr class="sharp">
+             <td class="time available-1">10 AM</td>
+            <td class="available-2 "></td>
+             <td class="available-2"></td>
+            <td class="available-3"></td>
+             <td class="available-3"></td>
+        </tr>
+        <tr class="half">
+             <td class="time available-1">11 AM</td>
+          <td class="available-4"></td>
+             <td class="available-3"></td>
+            <td class="available-4"></td>
+             <td class="available-0"></td>
+        </tr>
+        <tr class="sharp">
+            <td class="time available-1">12 AM</td>
+          <td class="available-4"></td>
+             <td class="available-3"></td>
+            <td class="available-4"></td>
+             <td class="available-0"></td>
+        </tr>
+</table>
+<div id="legend">
+    <span>Availability</span>
+    <div id="legend-gradient"></div>
+   <span class="zero">0</span>    <span class="marking">5+</span>
+</div>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+/* file: styles.css */
+:root{
+  --color0:#F2D2BD;
+--color1:#C9A9A6;
+--color2:#F3CFC6;
+--color3:#FFB6C1;
+--color4:#FF69B4;
+--color5:#DA70D6;
+--solid-border:1px solid #FAA0A0;
+--dashed-border:1px dashed #770737;
+}
+/*.sharp{
+  border-bottom:var(--solid-border);
+}
+.half{
+  border-bottom:var(--dashed-border);
+}*/
+#legend-gradient {
+  background-image: linear-gradient(90deg,
+    var(--color0) 0% 16%,
+    var(--color1) 16% 33%,
+    var(--color2) 33% 50%,
+    var(--color3) 50% 66%,
+    var(--color4) 66% 83%,
+    var(--color5) 83% 100%
+  );
+}
+.available-0{
+  background-color:var(--color0);
+}
+.available-1{
+  background-color:var(--color1);
+}
+.available-2{
+  background-color:var(--color2);
+}
+.available-3{
+  background-color:var(--color3);
+}
+.available-4{
+  background-color:var(--color4);
+}
+.available-5{
+  background-color:var(--color5);
+}
+.sharp td{
+  border-bottom:var(--solid-border);
+}
+.half td{
+  border-bottom:var(--dashed-border);
+}
+#legend{
+  margin:10px 0 0 0;
+  padding:2px;
+  background-color:#D8BFD8;
+  width:50%;
+  position:absolute;
+  height:90px;
+
+}
+span{
+  font-family:New Times Roman,sans-serif;
+  padding-top:20px;
+}
+.marking{
+position:relative;
+left:120px;
+top:10px;
+}
+.zero{
+  position:relative;
+left:25px;
+top:10px;
+}
+
+
+** end of styles.css **
+

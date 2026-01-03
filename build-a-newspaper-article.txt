@@ -1,0 +1,90 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newspaper Article</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="newspaper">
+    <div class="name">The Code Times</div>
+    <div class="date">December 19, 2025</div>
+    <div class="headline">AI Breakthrough Revolutionizes Industry</div>
+    <div class="sub-headline">New algorithms enhance predictions and efficiency</div>
+    <div class="author">Lesedi Precious</div>
+    <p class="text">
+      Artificial intelligence is advancing faster than ever, with new breakthroughs allowing machines to learn from data with unprecedented accuracy.
+    </p>
+    <p class="text">
+      Experts predict that these advancements will transform industries from healthcare to finance, creating both opportunities and challenges in equal measure.
+    </p>
+  </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Root font size */
+html {
+  font-size: 24px;
+}
+
+/* Newspaper container */
+.newspaper {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Newspaper name */
+.name {
+  font-size: 2rem; /* 2 x root font-size */
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+}
+
+/* Date */
+.date {
+  /* optional styling */
+}
+
+/* Headline */
+.headline {
+  font-size: 2em; /* 2 x parent font-size */
+  font-weight: bold;
+}
+
+/* Sub-headline */
+.sub-headline {
+  font-weight: 100;
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+/* Author */
+.author {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Article text paragraphs */
+.text {
+  text-indent: 20px;
+  line-height: 2em;
+}
+
+/* First letter styling */
+.text::first-letter {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+
+** end of styles.css **
+

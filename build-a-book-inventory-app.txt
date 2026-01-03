@@ -1,0 +1,171 @@
+** start of index.html **
+
+<!-- file: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Book Inventory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+
+    <h1>Book Inventory</h1>
+    <table>
+      <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Status</th>
+        <th>Rate</th>
+      </tr>
+      <tr class="read">
+        <td>Book1</td>
+        <td>Author</td>
+        <td>General Interest</td>
+        <td><span class="status read">Read</span></td>
+        <td><span class="rate two"><span></span><span></span><span></span></span></td>
+      </tr>
+            <tr class="read">
+        <td>Book2</td>
+        <td>Author</td>
+        <td>General Interest</td>
+        <td><span class="status read">Read</span></td>
+        <td><span class="rate one"><span></span><span></span><span></span></span></td>
+      </tr>
+            <tr class="to-read">
+        <td>Book3</td>
+        <td>Book1</td>
+        <td>General Interest</td>
+        <td><span class="status to-read">To Read</span></td>
+        <td><span class="rate"><span></span><span></span><span></span></span></td>
+      </tr>
+            <tr class="in-progress">
+        <td>Book4</td>
+        <td>Author</td>
+        <td>General Interest</td>
+        <td><span class="status in-progress">In Progress</span></td>
+        <td><span class="rate three"><span></span><span></span><span></span></span></td>
+      </tr>
+    </table>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+span {
+    display: inline-block;
+}
+
+/* Table row backgrounds */
+tr[class="read"] {
+    background-image: linear-gradient(to right, #e6ffed, #ffffff);
+    color: #104e1f;
+}
+
+tr[class="to-read"] {
+    background-image: linear-gradient(to right, #e6f6ff, #ffffff);
+    color: #1f4f6e;
+}
+
+tr[class="in-progress"] {
+    background-image: linear-gradient(to right, #fff4e6, #ffffff);
+    color: #6e471f;
+}
+
+/* Status and rate container */
+span[class="status"],
+span[class^="rate"] {
+    height: 28px;
+    width: 120px;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+/* Rate circles */
+span[class^="rate"] > span {
+    border: 1px solid #c7c7c7;
+    border-radius: 50%;
+    margin: 0 1px;
+    height: 10px;
+    width: 10px;
+    background-color: #f0f0f0;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Status styling by row type */
+tr[class="to-read"] span[class="status"] {
+    border: 1px solid #3b82f6;
+    background-image: linear-gradient(to bottom, #bfdbfe, #e0f2fe);
+    color: #1e40af;
+}
+
+tr[class="read"] span[class="status"] {
+    border: 1px solid #10b981;
+    background-image: linear-gradient(to bottom, #d1fae5, #ecfdf5);
+    color: #065f46;
+}
+
+tr[class="in-progress"] span[class="status"] {
+    border: 1px solid #f97316;
+    background-image: linear-gradient(to bottom, #fed7aa, #ffedd5);
+    color: #9a3412;
+}
+
+/* Rate fill colors */
+span[class~="one"] > span:first-child {
+    background-image: linear-gradient(45deg, #fde047, #facc15);
+    border-color: #facc15;
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+    background-image: linear-gradient(45deg, #fde047, #facc15);
+    border-color: #facc15;
+}
+
+span[class~="three"] > span {
+    background-image: linear-gradient(45deg, #fde047, #facc15);
+    border-color: #facc15;
+}
+
+/* Table styles */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    border-radius: 0.75rem;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 16px;
+    text-align: left;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+thead {
+    background-color: #1f2937;
+    color: white;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+tbody tr:hover {
+    opacity: 0.9;
+    transition: opacity 0.3s;
+}
+
+
+** end of styles.css **
+

@@ -1,0 +1,75 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Post Card</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="blog-post-card">
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg" alt="Cover photo for the blog post" class="post-img">
+    <div class="post-content">
+      <h2 class="post-title">My First Blog Post</h2>
+      <p class="post-excerpt">This is a short summary of my blog post. It gives readers an idea of what the post is about.</p>
+      <a href="https://example.com" class="read-more">Read More</a>
+    </div>
+  </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Blog Post Card Styles */
+.blog-post-card {
+  background-color: white;      /* white background */
+  border-radius: 10px;          /* rounded corners */
+  width: 400px;                 /* card width */
+  text-align: center;           /* text alignment */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* optional: subtle shadow */
+  margin: 50px auto;            /* center the card horizontally */
+  overflow: hidden;             /* ensures border radius clips image */
+}
+
+.post-img {
+  width: 100%;                  /* fills card width */
+  border-bottom: 2px solid #ccc; /* bottom border */
+  display: block;
+}
+
+.post-content {
+  padding: 20px;                /* padding inside the card */
+}
+
+.post-title {
+  color: #2c3e50;               /* non-default color */
+  margin: 10px 0;               /* margins */
+}
+
+.post-excerpt {
+  color: #555;                  /* non-default color */
+  margin: 10px 0;               /* margins */
+}
+
+.read-more {
+  color: white;                 /* text color */
+  background-color: #3498db;    /* background color */
+  margin: 10px 0;               /* margins */
+  padding: 10px 20px;           /* padding */
+  border-radius: 5px;           /* rounded corners */
+  display: inline-block;        /* allows padding and margins */
+  text-decoration: none;        /* remove underline */
+  transition: background-color 0.3s ease; /* smooth hover effect */
+}
+
+.read-more:hover {
+  background-color: #2980b9;    /* hover effect */
+}
+
+
+** end of styles.css **
+

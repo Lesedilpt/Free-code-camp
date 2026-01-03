@@ -1,0 +1,64 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <main id="email">
+    <div id="confidential">CONFIDENTIAL</div>
+    <div id="top-secret">TOP SECRET</div>
+
+    <p>This is a sample email. <span class="blurred">Some sensitive info here.</span></p>
+    <p>Do not share this with anyone. <span class="blurred">Other private content.</span></p>
+    <p>Handle with care. <span class="blurred">Keep confidential.</span></p>
+  </main>
+
+</body>
+</html>
+
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Style the main email container */
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid black;
+  box-sizing: border-box; /* ensures total width including padding and border is 500px */
+}
+
+/* Style confidential and top-secret labels */
+#confidential,
+#top-secret {
+  display: inline-block;
+  padding: 10px;
+  margin-left: 10px;
+  border: 2px solid red;
+  transform: rotate(-10deg); /* you can adjust rotation for top-secret separately if desired */
+  font-weight: bold;
+  color: red;
+}
+
+/* Optional: rotate top-secret differently */
+#top-secret {
+  transform: rotate(10deg);
+}
+
+/* Style blurred elements */
+.blurred {
+  filter: blur(3px);
+}
+
+
+** end of styles.css **
+

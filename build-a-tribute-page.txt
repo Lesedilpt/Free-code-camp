@@ -1,0 +1,101 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tribute Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main id="main">
+      <h1 id="title">Dr. Norman Borlaug</h1>
+      
+      <div id="img-div">
+        <img id="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Norman_Borlaug_2.jpg/640px-Norman_Borlaug_2.jpg" alt="Dr. Norman Borlaug working in a field">
+        <div id="img-caption">Dr. Norman Borlaug inspecting wheat fields in Mexico.</div>
+      </div>
+      
+      <div id="tribute-info">
+        Dr. Norman Borlaug was an American agronomist and humanitarian who led initiatives worldwide that contributed to the extensive increases in agricultural production termed the Green Revolution. He received the Nobel Peace Prize in 1970 for his work in increasing food supply and fighting hunger.
+      </div>
+      
+      <a id="tribute-link" href="https://en.wikipedia.org/wiki/Norman_Borlaug" target="_blank">Read more about Dr. Norman Borlaug</a>
+    </main>
+  </body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Basic styling for body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Main container */
+#main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+/* Title */
+#title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Image container */
+#img-div {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Image */
+#image {
+  display: block;    /* required for test 16 */
+  max-width: 100%;   /* required for test 17 */
+  height: auto;      /* required for test 18 */
+  margin: 0 auto;    /* center image */
+}
+
+/* Image caption */
+#img-caption {
+  font-size: 0.9rem;
+  margin-top: 5px;
+}
+
+/* Tribute info */
+#tribute-info {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: 20px 0;
+}
+
+/* Tribute link */
+#tribute-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #0077cc;
+}
+
+#tribute-link:hover {
+  text-decoration: underline;
+}
+
+
+
+** end of styles.css **
+

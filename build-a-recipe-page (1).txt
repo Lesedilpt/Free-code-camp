@@ -1,0 +1,35 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Chocolate Chip Cookies</title>
+  </head>
+  <body>
+    <h1>Chocolate Chip Cookies</h1>
+    <p>This is a simple and delicious recipe for homemade chocolate chip cookies that everyone will love!</p>
+    
+    <h2>Ingredients</h2>
+    <ul>
+      <li>1 cup butter, softened</li>
+      <li>1 cup white sugar</li>
+      <li>2 cups all-purpose flour</li>
+      <li>1 cup chocolate chips</li>
+    </ul>
+    
+    <h2>Instructions</h2>
+    <ol>
+      <li>Preheat your oven to 350°F (175°C).</li>
+      <li>Cream together the butter and sugar until smooth.</li>
+      <li>Stir in flour until combined, then fold in chocolate chips.</li>
+      <li>Drop spoonfuls of dough onto a baking sheet and bake for 10-12 minutes.</li>
+    </ol>
+    
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/recipe.jpg" alt="Plate of chocolate chip cookies">
+  </body>
+</html>
+
+
+** end of index.html **
+

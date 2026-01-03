@@ -1,0 +1,139 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <a class="nav-link" href="#welcome-section">Welcome</a>
+    <a class="nav-link" href="#project-section">Projects</a>
+    <a id="profile-link" href="https://github.com/your-username" target="_blank">My GitHub</a>
+  </nav>
+
+  <!-- Welcome Section -->
+  <section id="welcome-section">
+    <h1>Welcome to My Portfolio</h1>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="project-section">
+    <h2>My Projects</h2>
+    <div class="project-tile">
+      <a href="https://github.com/your-username/project1" target="_blank">
+        Project 1
+      </a>
+    </div>
+    <div class="project-tile">
+      <a href="https://github.com/your-username/project2" target="_blank">
+        Project 2
+      </a>
+    </div>
+  </section>
+
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Reset default margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#navbar a:hover {
+  color: #ffcc00;
+}
+
+/* Welcome Section */
+#welcome-section {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+}
+
+#welcome-section h1 {
+  font-size: 3rem;
+}
+
+/* Projects Section */
+#project-section {
+  padding: 100px 20px 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.project-tile {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+}
+
+.project-tile a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.project-tile a:hover {
+  color: #2575fc;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  #navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #welcome-section h1 {
+    font-size: 2rem;
+    padding: 0 10px;
+  }
+
+  #project-section {
+    padding: 120px 10px 50px;
+  }
+}
+
+
+** end of styles.css **
+

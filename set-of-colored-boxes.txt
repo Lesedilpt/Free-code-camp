@@ -1,0 +1,76 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colored Boxes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="color-grid">
+    <div class="color-box color1"></div>
+    <div class="color-box color2"></div>
+    <div class="color-box color3"></div>
+    <div class="color-box color4"></div>
+    <div class="color-box color5"></div>
+  </div>
+</body>
+</html>
+
+
+** end of index.html **
+
+** start of styles.css **
+
+/* Step 1: Body background color */
+body {
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Step 2: Color grid container */
+.color-grid {
+  display: flex;
+  gap: 15px;
+}
+
+/* Step 5: Basic style for color boxes */
+.color-box {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+/* Step 6: Hexadecimal color */
+.color1 {
+  background-color: #FF5733; /* example hex color */
+}
+
+/* Step 7: RGB color */
+.color2 {
+  background-color: rgb(60, 179, 113); /* example RGB color */
+}
+
+/* Step 8: Predefined word color */
+.color3 {
+  background-color: gold; /* example named color */
+}
+
+/* Step 9: HSL color */
+.color4 {
+  background-color: hsl(200, 70%, 50%); /* example HSL color */
+}
+
+/* Step 10: Any other background color */
+.color5 {
+  background-color: pink; /* example color */
+}
+
+
+** end of styles.css **
+
